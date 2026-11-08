@@ -27,7 +27,7 @@ main {
 }
 
 header {
-    background-color: #290252;
+    background-color: #023d02;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ header a {
 }
 
  header nav {
-    background-color:#38047c;
+    background-color:#036303;
     display: flex;
     flex-shrink: 0;
     gap: 20px;
@@ -99,6 +99,7 @@ header a {
 footer {
     text-align: center;
     font-size: 16px;
+    color:#ffffff;
     padding: 15px;
     background-color:#023d02;
 }
