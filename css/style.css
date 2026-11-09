@@ -129,3 +129,13 @@ footer {
     padding: 15px;
     background-color:#023d02;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
