@@ -30,6 +30,10 @@ html {
 }
 
 #mascot-image {
+    max-width: 100%;
+}
+
+#mascot-image img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -341,7 +345,7 @@ footer {
         width: 100%;
     }
 
-    #mascot-image {
+    #mascot-image img {
         width: 100%;
         max-width: 100%;
         height: auto;
