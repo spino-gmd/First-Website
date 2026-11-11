@@ -30,11 +30,16 @@ html {
 }
 
 #mascot-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: center;;
 }
 
 body {
+    background-color: #46c016;
     background-image: url(images/forest-background.jpg);
     background-size: cover;
     background-position: center;
@@ -55,6 +60,7 @@ main {
 header {
     background-color: #023d02;
     color: #ffffff;
+    flex-wrap: wrap;
     display: flex;
     position: relative;
     align-items: center;
@@ -62,6 +68,7 @@ header {
     border-bottom: 5px solid #000000;
     min-height: 70px;
     max-height: 150px;
+    gap: 20px;
 }
 
 .header-name {
@@ -101,12 +108,49 @@ header {
     color:#182c1d
 }
 
-.region-division {
+#guide-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+}
+
+#guide-container h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color:#182c1d
+}
+
+#guide-container ul {
+    font-size: 35px;
+    display: block;
+    padding: 20px 35px;
+    border-radius: 12px;
+    width: fit-content;
+    border: 3px solid #000000;
+    list-style-position: outside;
+    background-color:#8fc98f;
+}
+
+#guide-container a {
+    text-decoration: none;
+    color:#000000;
+    transition: font-size 0.3s ease-in-out;
+}
+
+#guide-container a:hover {
+    font-size: 37px;
+}
+
+#north, #northeast, #southeast,
+#central-west, #south {
     margin: 30px;
     text-align: center;
 }
 
-.region-division h2 {
+#north h2, #northeast h2, #southeast h2,
+#central-west h2, #south h2 {
     font-size: 35px;
 }
 
@@ -275,6 +319,28 @@ footer {
 }
 
 @media (max-width: 540px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        max-height: none;
+        gap: 10px;
+    }
+
+    .header-name {
+        position: static;
+        left: auto;
+        transform: none;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
     .birds {
         flex-direction: column;
         align-items: center;
@@ -283,12 +349,8 @@ footer {
     }
 
     .bird-card {
-        width: 80%;
+        width: 100%;
+        max-width: 350px;
     }
 
-    #mascot-image {
-        display: cover;
-        width: fit-content;
-        margin: auto;
-    }
 }
