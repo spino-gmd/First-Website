@@ -23,7 +23,7 @@ html {
 
 .links-list a {
     text-decoration: none;
-    color:rgb(100, 219, 255);
+    color:#10b7d4;
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -133,7 +133,7 @@ header {
     text-align: center;
     font-size: 20px;
     margin-bottom: 25px;
-    color:#214701
+    color:#182c1d
 }
 
 .region-division {
@@ -149,6 +149,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    padding-top: 20px;
 }
 .bird-card {
     background-color: #989c9e;
@@ -305,5 +306,18 @@ footer {
         animation: none !important;
         transition: none !important;
         scroll-behavior: auto !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .birds {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .bird-card {
+        width: 80%;
     }
 }
