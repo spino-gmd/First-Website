@@ -62,14 +62,13 @@ main {
 }
 
 header {
-    background-color: #023d02;
+    background-color: rgba(2,61,2,0.5);
     color: #ffffff;
     flex-wrap: wrap;
     display: flex;
     position: relative;
     align-items: center;
     padding: 7px 20px 7px 20px;
-    border-bottom: 5px solid #000000;
     min-height: 70px;
     max-height: 150px;
     gap: 20px;
