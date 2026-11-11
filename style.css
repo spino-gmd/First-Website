@@ -11,19 +11,17 @@ html {
 .links-list {
     font-size: 15px;
     display: block;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 12px;
     width: fit-content;
-    margin: 0 auto 15px;
     border: 3px solid #000000;
-    padding-left: 25px;
     list-style-position: outside;
     background-color:#023d02
 }
 
 .links-list a {
     text-decoration: none;
-    color:#10b7d4;
+    color:#FFFFFF;
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -37,7 +35,7 @@ html {
 }
 
 body {
-    background-image: url(../images/forest-background.jpg);
+    background-image: url(images/forest-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,37 +57,11 @@ header {
     color: #ffffff;
     display: flex;
     position: relative;
-    justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 7px 20px 7px 20px;
     border-bottom: 5px solid #000000;
     min-height: 70px;
-}
-
-.header-about,
-.header-contact {
-    color: inherit;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: Tahoma, Helvetica, sans-serif;
-    transition: font-size 0.3s ease-in-out;
-}
-
-.header-about:hover, .header-contact:hover {
-    font-size: 17px;
-}
-
-.header-menu {
-    color: inherit;
-    text-decoration: none;
-    font-size: 30px;
-    background-color:#036303;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.header-menu:hover {
-    background-color: #023d02;
+    max-height: 150px;
 }
 
 .header-name {
@@ -98,20 +70,13 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
- header nav {
-    background-color:#036303;
+    margin: 0;
     display: flex;
-    flex-shrink: 0;
-    max-height: 56px;
-    width: fit-content;
-    gap: 20px;
-    padding: 0 15px;
     align-items: center;
-    border-radius: 12px;
+    justify-content: center;
 }
 
+ 
 #home-title {
     font-size: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -319,5 +284,11 @@ footer {
 
     .bird-card {
         width: 80%;
+    }
+
+    #mascot-image {
+        display: cover;
+        width: fit-content;
+        margin: auto;
     }
 }
