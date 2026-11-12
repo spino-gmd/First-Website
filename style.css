@@ -112,6 +112,15 @@ header {
     color:#182c1d
 }
 
+#cat-link a{
+    text-decoration: none;
+    color:#96ff1e;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 #guide-container {
     display: flex;
     align-items: center;
