@@ -39,7 +39,8 @@ html {
     height: auto;
     margin: 0 auto;
     display: flex;
-    justify-content: center;;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease-out both;
 }
 
 body {
